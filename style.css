@@ -23,19 +23,22 @@ html {
 }
 
 .mobileMenu {
-    display: flex;
-    justify-content: space-around;
-    text-align: justify;
-    align-content: center;
-    align-items: flex-start;
     background-color: ghostwhite;
-    position: inherit;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .mobileMenu > ul {
     list-style: none;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: orangered;
+    justify-content: space-evenly;
+    padding-top: 30px;
     font-size: 65px;
 }
 
@@ -45,6 +48,7 @@ html {
     top: 8%;
     left: 4%;
     position: fixed;
+    z-index: 1;
 }
 
 .closeMenuIcon {
@@ -53,7 +57,8 @@ html {
     top: 8%;
     left: 4%;
     position: fixed;
-
+    opacity: 0;
+    z-index: 1;
 }
 
 
