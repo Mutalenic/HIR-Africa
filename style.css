@@ -22,10 +22,13 @@ html {
     display: none;
 }
 
+.header {
+    background-image: url(Images/header.png);
+}
+
 .mobileMenu {
     background-color: ghostwhite;
     position: fixed;
-    top: 0;
     opacity: 1;
     width: 100%;
     height: 100%;
@@ -35,21 +38,24 @@ html {
     display: none;
 }
 
-.mobileMenu > ul {
+
+
+.mobileMenu > ul a {
+    text-decoration: none;
+    font-size: 65px;
+    color: orangered;
+    padding-top: 15px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    color: orangered;
+    text-align: center;    
     justify-content: space-evenly;
-    padding-top: 30px;
-    font-size: 65px;
 }
 
 .mobileMenuIcon {
     font-size: 50px;
     color: firebrick;
-    top: 8%;
+    top: 2%;
     left: 4%;
     position: fixed;
     z-index: 1;
@@ -69,6 +75,57 @@ html {
     display: none;
 }
 
+.textIntro {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 106px 15px 64px 15px;
+    padding: 130 0 0 0;
+
+}
+
+.helloText1 {
+    font-size: 28px;
+    color: #ec5242;
+    line-height: 47px;
+}
+
+.hirConferenceText1 {
+    font-size: 37px;
+    font-family: 'COCOGOOSE',sans-serif;
+    color: #ec5242;
+    line-height: 40px;
+
+    background-image: url("Images/matrix.jpg");
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainIntro1 {
+    font-size: 18px;
+    line-height: 26px;
+    border: 3px solid white;
+    background-color: #d3d3d31c;
+    margin: 23px 5px 23px -6px;
+    padding: 20px;
+}
+
+.date1 {
+    font-size: 23px;
+    padding-top: -5px;
+    padding-bottom: 41px;
+    font-family: cocogoose;
+    letter-spacing: 2px;
+}
+
+.location1 {
+    font-size: 20px;
+}
+
+
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -76,6 +133,14 @@ html {
     .navLogo {
         width: 20%;
         height: auto;
+    }
+
+    .mobileMenu {
+        display: none;
+    }
+
+    .mobileMenuIcon {
+        display: none;
     }
 
 
