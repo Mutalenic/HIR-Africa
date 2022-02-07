@@ -18,20 +18,52 @@ html {
 .topNav {
     display: none;
 }
-
 .navLogo {
-    width: 20%;
-    height: auto;
+    display: none;
 }
 
 .mobileMenu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: justify;
+    align-content: center;
+    align-items: flex-start;
+    background-color: ghostwhite;
+    position: inherit;
+}
+
+.mobileMenu > ul {
+    list-style: none;
+    text-align: left;
+    color: orangered;
+    font-size: 65px;
+}
+
+.mobileMenuIcon {
+    font-size: 50px;
+    color: firebrick;
+    top: 8%;
+    left: 4%;
+    position: fixed;
+}
+
+.closeMenuIcon {
+    font-size: 50px;
+    color: firebrick;
+    top: 8%;
+    left: 4%;
+    position: fixed;
+
 }
 
 
 
 @media screen and (min-width: 768px) {
+
+    .navLogo {
+        width: 20%;
+        height: auto;
+    }
 
 
 }
