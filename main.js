@@ -71,12 +71,13 @@ function createSpeakerSection(cardData) {
   cardData.forEach((card) => {
     const cardMaster = `
   <div class="speaker1">
-  <div class="grid-card">
-  <img src="${card.Picture}" alt="${card.ImageAlt}"></div>
-  
-  <div class="card-content">
+  <div class="speakerGridCard">
+  <img src="${card.Picture}" alt="${card.ImageAlt}">
+  </div>  
+  <div class="speakerCardContent">
   <h3 class="speakerName">${card.Name}</h3>
-  <h4 class="SpeakerTitle"><i>${card.speakerTitle}</i></h4>
+  <h4 class="speakerTitle"><i>${card.speakerTitle}</i></h4>
+  <hr class="speakerTitleLine">
   <p class="speakerText">${card.Bio}</p>
   </div>
   </div>
