@@ -24,7 +24,7 @@ html {
 }
 
 .header {
-  background-image: url(Images/header.png);
+  background-image: url(images/header.png);
 }
 
 .mobileMenu {
@@ -94,7 +94,7 @@ html {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
   line-height: 40px;
-  background-image: url("Images/matrix.jpg");
+  background-image: url("images/matrix.jpg");
   background-size: 50%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -264,7 +264,7 @@ html {
   flex-direction: column;
   align-items: center;
   color: #d3d3d3;
-  background-image: url(Images/Partners.jpg);
+  background-image: url(images/Partners.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -582,7 +582,7 @@ html {
     color: #ec5242;
     line-height: 68px;
     padding-top: 14px;
-    background-image: url("Images/matrix.jpg");
+    background-image: url("images/matrix.jpg");
     background-size: 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
