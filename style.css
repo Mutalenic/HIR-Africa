@@ -18,6 +18,7 @@ html {
 .topNav {
   display: none;
 }
+
 .navLogo {
   display: none;
 }
@@ -27,6 +28,7 @@ html {
 }
 
 .mobileMenu {
+  display: none;
   background-color: ghostwhite;
   position: fixed;
   opacity: 1;
@@ -34,16 +36,12 @@ html {
   height: 100%;
 }
 
-.mobileMenu {
+.mainLogo {
   display: none;
 }
 
-.mainLogo {
-    display: none;
-}
-
 .mainNavList {
-    display: none;
+  display: none;
 }
 
 .mobileMenu > ul a {
@@ -68,6 +66,7 @@ html {
 }
 
 .closeMenuIcon {
+  display: none;
   font-size: 50px;
   color: firebrick;
   top: 8%;
@@ -75,10 +74,6 @@ html {
   position: fixed;
   opacity: 1;
   z-index: 1;
-}
-
-.closeMenuIcon {
-  display: none;
 }
 
 .textIntro {
@@ -99,7 +94,6 @@ html {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
   line-height: 40px;
-
   background-image: url("Images/matrix.jpg");
   background-size: 50%;
   -webkit-background-clip: text;
@@ -126,6 +120,7 @@ html {
 .location1 {
   font-size: 20px;
 }
+
 /* about html */
 .textIntroAbt {
   display: flex;
@@ -144,7 +139,6 @@ html {
   font-size: 30px;
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5242;
-  padding: 2;
   padding-left: 15px;
   margin-bottom: 40px;
   line-height: 40px;
@@ -161,13 +155,11 @@ html {
 
 .date1Abt {
   font-size: 14px;
-  padding-top: -5px;
   padding-bottom: 41px;
   text-align: center;
   font-weight: 400;
   padding-top: 27px;
   line-height: 23px;
-  padding: 41px 27px;
   font-family: "lato", sans-serif;
 }
 
@@ -491,7 +483,6 @@ html {
     display: none;
   }
 
-  
   .mainPragramCardsContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -548,11 +539,10 @@ html {
   }
 
   .mainLogo {
-      display: inline-flex;
+    display: inline-flex;
     width: 80px;
     position: relative;
     top: -34px;
-    left: -px;
     height: auto;
     margin-bottom: -50px;
     margin-left: -137px;
@@ -663,21 +653,20 @@ html {
     flex-direction: column;
     padding: 106px 15px 64px 15px;
   }
-  
+
   .helloText1Abt {
     display: none;
   }
-  
+
   .hirConferenceText1Abt {
     font-size: 67px;
     font-family: "COCOGOOSE", sans-serif;
     color: #ec5242;
-    padding: 2;
     padding-left: 93px;
     margin-bottom: 40px;
     line-height: 82px;
   }
-  
+
   .mainIntro1Abt {
     font-size: 15px;
     line-height: 29px;
@@ -689,29 +678,27 @@ html {
   }
 
   .conferenceLogoTitle {
-    font-family: 'COCOGOOSE',sans-serif;
+    font-family: 'COCOGOOSE', sans-serif;
     font-weight: 100;
   }
-  
+
   .date1Abt {
     font-size: 14px;
-    padding-top: -5px;
     padding-bottom: 41px;
     text-align: center;
     font-weight: 400;
     padding-top: 27px;
     line-height: 23px;
-    padding: 41px 27px;
     font-family: "lato", sans-serif;
   }
-  
+
   .location1Abt {
     font-size: 18px;
     line-height: -16px;
     margin-top: -35px;
     text-decoration: underline;
   }
-  
+
   .abtLogoCampaign {
     display: flex;
     font-family: "lato", sans-serif;
@@ -727,7 +714,7 @@ html {
     height: auto;
     padding: 32px 0 42px 0;
   }
-  
+
   .pastEvents {
     display: flex;
     text-align: center;
@@ -735,7 +722,7 @@ html {
     flex-direction: column;
   }
 
-.pastImage2020 {
+  .pastImage2020 {
     color: white;
     background-image: url(images/conference1.jpg);
     min-height: 195px;
@@ -749,14 +736,13 @@ html {
     box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
     text-align: center;
     padding-top: 24px;
-}
+  }
 
-.container4 {
+  .container4 {
     display: none;
-}
+  }
 
-
-.footer1 {
+  .footer1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -766,13 +752,13 @@ html {
     width: 95%;
     background-color: #000000cf;
     gap: -1px;
-}
+  }
 
-.seemore {
+  .seemore {
     display: none;
-}
+  }
 
-.container5 {
+  .container5 {
     display: flex;
     flex-direction: column;
     background-color: #272a31;
@@ -789,9 +775,8 @@ html {
     font-size: 33px;
   }
 
-  .seePastLine{
-      color: #ec5242;
-      width: 100px;
+  .seePastLine {
+    color: #ec5242;
+    width: 100px;
   }
-
 }
