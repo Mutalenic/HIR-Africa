@@ -40,7 +40,7 @@ const speakersinfo = [
     Picture: './images/Doreen.jpg',
     ImageAlt: 'Doreen Okiri',
     speakerTitle: 'Head of customer Success DOUBLE GDP',
-    Bio: 'Doreen is Specialised in Project management, software implementation and has extensive experience in SaaS customer success.",
+    Bio: 'Doreen is Specialised in Project management, software implementation and has extensive experience in SaaS customer success.',
   },
   {
     Name: 'Silumesii Maboshe',
