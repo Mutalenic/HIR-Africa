@@ -83,7 +83,7 @@ function createSpeakerSection(cardData) {
   </div>
   </div>
   `;
-    speakerCard.insertAdjacentHTML('beforebegin', cardMaster);
+    speakerCard.insertAdjacentHTML('beforeend', cardMaster);
   });
 }
 

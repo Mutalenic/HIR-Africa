@@ -38,6 +38,14 @@ html {
   display: none;
 }
 
+.mainLogo {
+    display: none;
+}
+
+.mainNavList {
+    display: none;
+}
+
 .mobileMenu > ul a {
   text-decoration: none;
   font-size: 65px;
@@ -324,6 +332,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 
 .line2 {
@@ -482,6 +491,7 @@ html {
     display: none;
   }
 
+  
   .mainPragramCardsContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -499,9 +509,8 @@ html {
   .topNav {
     display: flex;
     justify-content: flex-end;
-    padding-left: 218px;
+    padding-right: 40px;
     background-color: black;
-    justify-content: space-around;
   }
 
   .topNav a {
@@ -522,11 +531,11 @@ html {
 
   .mainNavList {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: white;
     gap: 40px;
     list-style: none;
-    padding: 23px 0px 23px 0;
+    padding: 23px 30px 23px 0;
   }
 
   .mainNav {
@@ -539,10 +548,11 @@ html {
   }
 
   .mainLogo {
+      display: inline-flex;
     width: 80px;
     position: relative;
     top: -34px;
-    left: 20px;
+    left: -px;
     height: auto;
     margin-bottom: -50px;
     margin-left: -137px;
@@ -552,6 +562,14 @@ html {
     border: 4px solid #ec5242;
     color: #ec5242;
     padding: 6px;
+  }
+
+  .mainNavList .mainLogo {
+    justify-content: flex-start;
+  }
+
+  .mainNavList .aboutList {
+    padding-left: 180px;
   }
 
   .textIntro {
@@ -623,7 +641,7 @@ html {
     justify-content: center;
     align-items: center;
     grid-template-columns: 40% 40%;
-    column-gap: 15px;
+    column-gap: 40px;
   }
 
   .speakerSectionContent {
@@ -651,13 +669,13 @@ html {
   }
   
   .hirConferenceText1Abt {
-    font-size: 40px;
+    font-size: 67px;
     font-family: "COCOGOOSE", sans-serif;
     color: #ec5242;
     padding: 2;
-    padding-left: 15px;
+    padding-left: 93px;
     margin-bottom: 40px;
-    line-height: 40px;
+    line-height: 82px;
   }
   
   .mainIntro1Abt {
@@ -740,14 +758,40 @@ html {
 
 .footer1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 95%;
-    margin: 20px auto;
+    padding-left: 210px;
     color: white;
-    padding: 34px 62px 43px 130px;
-    gap: 48px;
-    background-color: #000000d9;
+    padding-right: 82px;
+    width: 95%;
+    background-color: #000000cf;
+    gap: -1px;
 }
+
+.seemore {
+    display: none;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #272a31;
+    text-align: center;
+    line-height: 36px;
+    padding-top: 26px;
+    padding-bottom: 24px;
+  }
+
+  .partnersListDesktop {
+    justify-content: center;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: #d3d3d3;
+    font-size: 33px;
+  }
+
+  .seePastLine{
+      color: #ec5242;
+      width: 100px;
+  }
 
 }
