@@ -28,11 +28,11 @@ This is my first captsotne project at Microverse. Capstone Projects are done at 
 ## Acknowledgements
 Original design idea by Cindy Shin in Behance.[https://www.behance.net/adagio07]
 
-Contributions, issues, and feature requests are welcome!
+##Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [https://github.com/Mutalenic/HIR-Africa/issues]
 
-Getting Started
+##Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
