@@ -15,9 +15,9 @@ This is my first captsotne project at Microverse. Capstone Projects are done at 
 - Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 - Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
-## Demo link: [https://mutalenic.github.io/HIR-Africa/]
+## [Demo link](https://mutalenic.github.io/HIR-Africa/)
 
-## video presentation:[https://www.loom.com/share/323023b0908e445e87ba893d49237034]
+## [Demo video](https://www.loom.com/share/323023b0908e445e87ba893d49237034)
 
 ## Authors
 
@@ -26,11 +26,11 @@ This is my first captsotne project at Microverse. Capstone Projects are done at 
 - LinkedIn: [LinkedIn: nicholasmutale](https://www.linkedin.com/in/nicholas-mutale-715714124/)
 
 ## Acknowledgements
-Original design idea by Cindy Shin in Behance.[https://www.behance.net/adagio07]
+Original design idea by Cindy Shin in [Behance](https://www.behance.net/adagio07)
 
 ## Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/Mutalenic/HIR-Africa/issues]
+Feel free to check the [issues](https://github.com/Mutalenic/HIR-Africa/issues)
 
 ## Getting Started
 
