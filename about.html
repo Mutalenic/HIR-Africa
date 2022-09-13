@@ -19,41 +19,46 @@
     gtag('config', 'G-9S3Y96W739');
   </script>
 </head>
+
 <body>
-  <header>
-    <div class="topNav-background">
-      <ul class="topNav">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#">English</a></li>
-        <li><a href="#">My Page</a></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </div>
-    <div class="nav-container">
-    <nav class="mainNav">
-      <ul class="mainNavList">
-        <li><a href="index.html"><img src="img/Hirlogo1.jpg" alt="toplogo" class="mainLogo"></a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Program</a></li>
-        <li><a href="#join">Join</a></li>
-        <li><a href="#sponsor">Sponsor</a></li>
-        <li><a href="#News">News</a></li>
-        <li><a href="#HirCompaign" class="hirCompaign">HIR Compaign</a></li>
-      </ul>
-    </nav>
-
-    <div><a href="index.html"><img src="img/Hirlogo1.jpg" alt="logo" class="navLogo"></a></div>
-
-    <div class="mobileMenuIcon"><i class="fas fa-bars bars"></i></div>
-    <div class="closeMenuIcon"><i class="fas fa-times hidecross"></i></div>
-    <nav class="mobileMenu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Program</a></li>
-        <li><a href="#news">News</a></li>
-      </ul>
-    </nav>
+  <div class="header-bg">
+    <header>
+      <div class="topNav-background">
+        <ul class="topNav">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="nav-container">
+        <div class="nav-div">
+          <a href="index.html"><img src="img/Hirlogo1.jpg" alt="logo" class="navLogo"></a>
+          <nav>
+            <ul class="mainNavList">
+              <li class="nav-list"><a href="index.html">Home</a></li>
+              <li class="nav-list"><a href="index.html">Program</a></li>
+              <li class="nav-list"><a href="#join">Join</a></li>
+              <li class="nav-list"><a href="#sponsor">Sponsor</a></li>
+              <li class="nav-list"><a href="#News">News</a></li>
+              <li class="nav-list"><a href="#HirCompaign" id="hirCompaign">HIR Compaign</a></li>
+            </ul>
+            <ul class="mobile-menu-links">
+              <li className="mobile-list"><a href="index.html">Home</a></li>
+              <li className="mobile-list"><a href="index.html">Program</a></li>
+              <li className="mobile-list"><a href="index.html">Join</a></li>
+              <li className="mobile-list"><a href="#sponsor">Sponsor</a></li>
+              <li className="mobile-list"><a href="#news">News</a></li>
+            </ul>
+            <div>
+              <div class="mobileMenuIcon"><i class="fas fa-bars bars"></i></div>
+              <div class="closeMenuIcon"><i class="fas fa-times hidecross"></i></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
     <div class="textIntroAbt">
       <h2 class="helloText1Abt">"Hello! Hackers in Africa"</h2>
       <h1 class="hirConferenceText1Abt">HIR AFRICA CONFERENCE 2022</h1>
@@ -67,7 +72,7 @@
         Conference 2022</h3>
       <p class="location1Abt">hirafrica@hirnkwashi.org</p>
     </div>
-  </header>
+  </div>
   <section class="abtLogoCampaign">
     <h2 class="conferenceLogoTitle">HIR AFRICA CONFERENCE 2022 LOGO</h2>
     <div class="logoLine">
@@ -121,4 +126,5 @@
   </footer>
   <script src="main.js"></script>
 </body>
+
 </html>

@@ -38,45 +38,44 @@
         <li><a href="#">Logout</a></li>
       </ul>
     </div>
-    <nav class="mainNav">
-      <ul class="mainNavList">
-        <li>
-          <a href="index.html"><img src="img/Hirlogo1.jpg" alt="toplogo" class="mainLogo" /></a>
-        </li>
-        <li><a href="about.html" class="aboutList">About</a></li>
-        <li><a href="index.html">Program</a></li>
-        <li><a href="#join">Join</a></li>
-        <li><a href="#sponsor">Sponsor</a></li>
-        <li><a href="#News">News</a></li>
-        <li><a href="#Hir" class="hirCompaign">HIR Compaign</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <a href="index.html"><img src="img/Hirlogo1.jpg" alt="logo" class="navLogo" /></a>
-    </div>
-
-    <div class="mobileMenuIcon"><i class="fas fa-bars bars"></i></div>
-    <div class="closeMenuIcon"><i class="fas fa-times hidecross"></i></div>
-    <nav class="mobileMenu">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Program</a></li>
-        <li><a href="#news">News</a></li>
-      </ul>
-    </nav>
-    <div class="textIntro">
-      <h2 class="helloText1">"Hello! Hackers in Africa"</h2>
-      <h1 class="hirConferenceText1">HIR AFRICA CONFERENCE 2022</h1>
-      <p class="mainIntro1">
-        An innovative conference on immerging technologies with
-        software-developers from 20 countries across Africa is taking place in
-        Nkwashi, Zambia.
-      </p>
-      <h3 class="date1">2022.10.25(TUE)~28(FRI)</h3>
-      <p class="location1">@ Nkwashi city Hall ,Lusaka , Zambia.</p>
+    <div class="nav-container">
+      <div class="nav-div">
+        <a href="index.html"><img src="img/Hirlogo1.jpg" alt="logo" class="navLogo" /></a>
+        <nav>
+          <ul class="mainNavList">
+            <li><a href="about.html" class="aboutList">About</a></li>
+            <li><a href="index.html">Program</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#News">News</a></li>
+            <li class="nav-list"><a href="#HirCompaign" id="hirCompaign">HIR Compaign</a></li>
+          </ul>
+          <ul class="mobile-menu-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Program</a></li>
+            <li className="mobile-list"><a href="index.html">Join</a></li>
+            <li className="mobile-list"><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+          <div>
+            <div class="mobileMenuIcon"><i class="fas fa-bars bars"></i></div>
+            <div class="closeMenuIcon"><i class="fas fa-times hidecross"></i></div>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
+  <div class="textIntro">
+    <h2 class="helloText1">"Hello! Hackers in Africa"</h2>
+    <h1 class="hirConferenceText1">HIR AFRICA CONFERENCE 2022</h1>
+    <p class="mainIntro1">
+      An innovative conference on immerging technologies with
+      software-developers from 20 countries across Africa is taking place in
+      Nkwashi, Zambia.
+    </p>
+    <h3 class="date1">2022.10.25(TUE)~28(FRI)</h3>
+    <p class="location1">@ Nkwashi city Hall ,Lusaka , Zambia.</p>
+  </div>
   <main class="containerProgram">
     <h3 class="mainProgramHeader">Main Program</h3>
     <hr class="line1" />

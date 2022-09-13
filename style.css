@@ -29,7 +29,7 @@ a {
   display: none;
 }
 
-header {
+.header-bg {
   background-image: url(img/header.png);
 }
 
@@ -473,8 +473,10 @@ header {
 
 @media screen and (min-width: 768px) {
   .navLogo {
-    width: 20%;
+    display: flex;
     height: auto;
+    width: 80px;
+    border-radius: 20px;
   }
 
   .mobileMenu {
@@ -483,6 +485,21 @@ header {
 
   .mobileMenuIcon {
     display: none;
+  }
+
+  .nav-container {
+    background-color: #fff;
+    box-shadow: 0 6px 2px -2px rgba(166, 166, 182, 0.5);
+    display: flex;
+  }
+
+  .nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
   }
 
   .joinbtn {
@@ -527,20 +544,22 @@ header {
 
   .mainNavList {
     display: flex;
-    justify-content: flex-end;
-    background-color: white;
-    gap: 40px;
-    list-style: none;
-    padding: 23px 30px 23px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
   .mainNav {
     display: inline;
   }
 
-  .mainNavList a {
-    text-decoration: none;
-    color: black;
+  .mainNavList li {
+    padding-left: 20px;
+  }
+
+  
+  .mainNavList li a {
+    color: #272a31;
   }
 
   .mainLogo {
@@ -553,18 +572,32 @@ header {
     margin-left: -137px;
   }
 
-  .mainNavList .hirCompaign {
-    border: 4px solid #ec5242;
-    color: #ec5242;
-    padding: 6px;
-  }
 
+  #hirCompaign {
+    border: 3px solid #ec5242;
+    color: #ec5242;
+    padding: 10px;
+  }
+/* 
   .mainNavList .mainLogo {
     justify-content: flex-start;
-  }
+  } */
 
-  .mainNavList .aboutList {
+  /* .mainNavList .aboutList {
     padding-left: 180px;
+  } */
+  .mobile-menu-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #d3d3d3;
+    opacity: 0.9;
+    position: fixed;
   }
 
   .textIntro {
