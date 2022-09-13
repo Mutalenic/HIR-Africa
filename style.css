@@ -14,6 +14,12 @@ html {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 .topNav {
   display: none;
@@ -23,7 +29,7 @@ html {
   display: none;
 }
 
-.header {
+header {
   background-image: url(img/header.png);
 }
 
@@ -497,27 +503,26 @@ html {
     background-color: #787f7d4d;
   }
 
-  .topNav {
+  .topNav { 
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;
-    background-color: black;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .topNav a {
-    display: inline-flex;
-    list-style: none;
-    color: white;
-    font-size: 15px;
-    padding: 4px;
-    text-decoration: none;
+  .topNav li {   
+    padding-left: 20px;
+
   }
 
-  .topNav > ul {
-    justify-self: start;
-    display: flex;
-    list-style: none;
-    gap: 36px;
+  .topNav > li a {
+    color: #fff;
+  }
+
+  .topNav-background {
+  background-color: #272a31;
   }
 
   .mainNavList {
