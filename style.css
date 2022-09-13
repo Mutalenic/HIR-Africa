@@ -186,9 +186,10 @@ a {
 }
 
 .logoLine {
-  align-items: center;
-  width: 55px;
-  padding: 15px;
+  align-self: center;
+  width: 30px;
+  border: 1px solid #ec5242;
+  margin-bottom: 40px;
 }
 
 .logoText {
@@ -746,12 +747,29 @@ a {
     padding: 40px 20px 40px 20px;
   }
 
-  .logoImage {
-    align-items: center;
-    width: 358px;
-    height: auto;
-    padding: 32px 0 42px 0;
+  .logodiv {
+    padding-top: 20px;
+    position: relative;
+    align-self: center;
+    text-align: center;
   }
+  
+  .logodiv img {
+    border-radius: 10%;
+    width: 90%;
+    margin: 0 auto 40px 0;
+  }
+
+  .logodiv p {
+    position: absolute;
+    padding-top: 20px;
+    color: blue;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
 
   .pastEvents {
     display: flex;
