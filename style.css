@@ -33,13 +33,23 @@ a {
   background-image: url(img/header.png);
 }
 
-.mobileMenu {
+.mobile-menu-links {
   display: none;
-  background-color: ghostwhite;
+  background-color: #d3d3d3;
   position: fixed;
   opacity: 1;
   width: 100%;
   height: 100%;
+  padding-top: 12%;
+}
+.mobile-menu-links li {  
+  display: flex;
+  flex-direction :column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .mainLogo {
@@ -50,7 +60,7 @@ a {
   display: none;
 }
 
-.mobileMenu > ul a {
+/* .mobile-menu-links {
   text-decoration: none;
   font-size: 65px;
   color: orangered;
@@ -60,7 +70,7 @@ a {
   flex-direction: column;
   text-align: center;
   justify-content: space-evenly;
-}
+} */
 
 .mobileMenuIcon {
   font-size: 50px;
@@ -220,6 +230,7 @@ a {
   width: 30px;
   border: 1px solid #ec5242;
   margin-bottom: 40px;
+  margin-top: 2%;
 }
 
 .logoText {
@@ -227,11 +238,25 @@ a {
   line-height: 24px;
 }
 
-.logoImage {
+/* .logoImage {
   align-items: center;
   width: 260px;
   height: auto;
   padding: 32px 0 42px 0;
+} */
+.logodiv img {
+  border-radius: 10%;
+  width: 90%;
+  margin: 0 auto 40px 0;
+  position: relative;
+}
+
+.logodiv p {
+  position: absolute;
+  color: blue;
+  top: 119%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sectionDividerLine {
@@ -247,7 +272,6 @@ a {
 
 .pastText {
   padding: 20px;
-  font-size: 12px;
 }
 
 /* .pastImage2020 {
@@ -616,7 +640,7 @@ a {
   /* .mainNavList .aboutList {
     padding-left: 180px;
   } */
-  .mobile-menu-links {
+  /* .mobile-menu-links {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -628,7 +652,7 @@ a {
     background-color: #d3d3d3;
     opacity: 0.9;
     position: fixed;
-  }
+  } */
 
   .textIntro {
     display: flex;
@@ -709,6 +733,7 @@ a {
   .pastEventImage {
     flex-direction: row;
     gap: 10px;
+    padding-top: 3%;
     margin: 0 auto;
   }
 
@@ -802,10 +827,13 @@ a {
   .pastEvents {
     display: flex;
     text-align: center;
-    padding: 5px 140px 20px 140px;
+    font-size: 100%;
+    /* padding-bottom: 20%; */
+    /* padding: 5px 140px 20px 140px; */
     flex-direction: column;
   }
 
+  
  .pastImage img {
   width: 100%;
  }
