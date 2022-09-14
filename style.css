@@ -15,6 +15,14 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .topNav {
   display: none;
 }
@@ -23,17 +31,28 @@ html {
   display: none;
 }
 
-.header {
+.header-bg {
   background-image: url(img/header.png);
 }
 
-.mobileMenu {
+.mobile-menu-links {
   display: none;
   background-color: ghostwhite;
   position: fixed;
   opacity: 1;
   width: 100%;
   height: 100%;
+  padding-top: 12%;
+}
+
+.mobile-menu-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .mainLogo {
@@ -42,18 +61,6 @@ html {
 
 .mainNavList {
   display: none;
-}
-
-.mobileMenu > ul a {
-  text-decoration: none;
-  font-size: 65px;
-  color: orangered;
-  padding-top: 15px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-evenly;
 }
 
 .mobileMenuIcon {
@@ -129,6 +136,37 @@ html {
   padding: 106px 15px 64px 15px;
 }
 
+.logodiv img {
+  border-radius: 10%;
+  width: 90%;
+  margin: 0 auto 40px 0;
+  position: relative;
+}
+
+.pastImage img {
+  width: 80%;
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+
+.pastImage {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.past-text {
+  position: absolute;
+  font-size: x-large;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.past-text h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
 .helloText1Abt {
   font-size: 28px;
   color: #ec5242;
@@ -180,9 +218,11 @@ html {
 }
 
 .logoLine {
-  align-items: center;
-  width: 55px;
-  padding: 15px;
+  align-self: center;
+  width: 30px;
+  border: 1px solid #ec5242;
+  margin-bottom: 40px;
+  margin-top: 2%;
 }
 
 .logoText {
@@ -190,11 +230,12 @@ html {
   line-height: 24px;
 }
 
-.logoImage {
-  align-items: center;
-  width: 260px;
-  height: auto;
-  padding: 32px 0 42px 0;
+.logodiv p {
+  position: absolute;
+  color: blue;
+  top: 119%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sectionDividerLine {
@@ -210,44 +251,12 @@ html {
 
 .pastText {
   padding: 20px;
-  font-size: 12px;
-}
-
-.pastImage2020 {
-  color: white;
-  background-image: url('img/conference1.jpg');
-  min-height: 195px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: -40px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-  text-align: center;
-  padding-top: 24px;
-}
-
-.pastImage2018 {
-  color: white;
-  background-image: url('img/conference2.jpg');
-  min-height: 195px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: 15px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-  text-align: center;
-  padding-top: 24px;
 }
 
 .pastEventImage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 54px;
+  width: 100%;
 }
 
 .mainProgramCard {
@@ -398,26 +407,8 @@ html {
   padding: 20px;
 }
 
-.seemore {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-  padding: 10px 113px;
-  width: 103%;
-  color: black;
-  background: none;
-}
-
-#chevronDown {
-  color: #ec5242;
-  font-size: 25px;
-  margin-top: -18px;
-  padding-left: 8px;
-  padding-top: -85px;
+.pastImage img:hover {
+  filter: opacity(0.9) drop-shadow(0 0 0 red);
 }
 
 .container4 {
@@ -456,9 +447,9 @@ html {
 }
 
 .footerlogo {
-  margin-left: 20%;
-  width: 104px;
-  height: auto;
+  width: 80px;
+  border-radius: 40px;
+  margin-right: 50px;
 }
 
 .footerText {
@@ -467,16 +458,33 @@ html {
 
 @media screen and (min-width: 768px) {
   .navLogo {
-    width: 20%;
+    display: flex;
     height: auto;
+    width: 80px;
+    border-radius: 20px;
   }
 
-  .mobileMenu {
+  .mobile-menu-links {
     display: none;
   }
 
   .mobileMenuIcon {
     display: none;
+  }
+
+  .nav-container {
+    background-color: #fff;
+    box-shadow: 0 6px 2px -2px rgba(166, 166, 182, 0.5);
+    display: flex;
+  }
+
+  .nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
   }
 
   .joinbtn {
@@ -498,44 +506,43 @@ html {
   }
 
   .topNav {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    padding-right: 40px;
-    background-color: black;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .topNav a {
-    display: inline-flex;
-    list-style: none;
-    color: white;
-    font-size: 15px;
-    padding: 4px;
-    text-decoration: none;
+  .topNav li {
+    padding-left: 20px;
   }
 
-  .topNav > ul {
-    justify-self: start;
-    display: flex;
-    list-style: none;
-    gap: 36px;
+  .topNav > li a {
+    color: #fff;
+  }
+
+  .topNav-background {
+    background-color: #272a31;
   }
 
   .mainNavList {
     display: flex;
-    justify-content: flex-end;
-    background-color: white;
-    gap: 40px;
-    list-style: none;
-    padding: 23px 30px 23px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
   .mainNav {
     display: inline;
   }
 
-  .mainNavList a {
-    text-decoration: none;
-    color: black;
+  .mainNavList li {
+    padding-left: 20px;
+  }
+
+  .mainNavList li a {
+    color: #272a31;
   }
 
   .mainLogo {
@@ -548,18 +555,10 @@ html {
     margin-left: -137px;
   }
 
-  .mainNavList .hirCompaign {
-    border: 4px solid #ec5242;
+  #hirCompaign {
+    border: 3px solid #ec5242;
     color: #ec5242;
-    padding: 6px;
-  }
-
-  .mainNavList .mainLogo {
-    justify-content: flex-start;
-  }
-
-  .mainNavList .aboutList {
-    padding-left: 180px;
+    padding: 10px;
   }
 
   .textIntro {
@@ -639,10 +638,11 @@ html {
   }
 
   .pastEventImage {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 54px;
+    gap: 10px;
+    padding-top: 3%;
+    margin: 0 auto;
   }
 
   /* about desktop */
@@ -708,34 +708,37 @@ html {
     padding: 40px 20px 40px 20px;
   }
 
-  .logoImage {
-    align-items: center;
-    width: 358px;
-    height: auto;
-    padding: 32px 0 42px 0;
+  .logodiv {
+    padding-top: 20px;
+    position: relative;
+    align-self: center;
+    text-align: center;
+  }
+
+  .logodiv img {
+    border-radius: 10%;
+    width: 90%;
+    margin: 0 auto 40px 0;
+  }
+
+  .logodiv p {
+    position: absolute;
+    padding-top: 20px;
+    color: blue;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .pastEvents {
     display: flex;
     text-align: center;
-    padding: 5px 140px 20px 140px;
+    font-size: 100%;
     flex-direction: column;
   }
 
-  .pastImage2020 {
-    color: white;
-    background-image: url(img/conference1.jpg);
-    min-height: 195px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  .pastImage img {
     width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 15px;
-    margin-left: -37px;
-    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-    text-align: center;
-    padding-top: 24px;
   }
 
   .container4 {
@@ -743,15 +746,11 @@ html {
   }
 
   .footer1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 210px;
+    padding-left: 10%;
     color: white;
-    padding-right: 82px;
-    width: 95%;
+    padding-right: 2%;
+    width: 100%;
     background-color: #000000cf;
-    gap: -1px;
   }
 
   .seemore {
