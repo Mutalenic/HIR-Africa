@@ -14,9 +14,11 @@ html {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -35,16 +37,17 @@ a {
 
 .mobile-menu-links {
   display: none;
-  background-color: #d3d3d3;
+  background-color: ghostwhite;
   position: fixed;
   opacity: 1;
   width: 100%;
   height: 100%;
   padding-top: 12%;
 }
-.mobile-menu-links li {  
+
+.mobile-menu-links li {
   display: flex;
-  flex-direction :column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 10%;
@@ -59,18 +62,6 @@ a {
 .mainNavList {
   display: none;
 }
-
-/* .mobile-menu-links {
-  text-decoration: none;
-  font-size: 65px;
-  color: orangered;
-  padding-top: 15px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-evenly;
-} */
 
 .mobileMenuIcon {
   font-size: 50px;
@@ -145,36 +136,37 @@ a {
   padding: 106px 15px 64px 15px;
 }
 
+.logodiv img {
+  border-radius: 10%;
+  width: 90%;
+  margin: 0 auto 40px 0;
+  position: relative;
+}
+
 .pastImage img {
   width: 80%;
   filter: opacity(0.4) drop-shadow(0 0 0 red);
-  }
+}
 
-  .pastImage {
+.pastImage {
   position: relative;
   text-align: center;
   color: white;
-  }
+}
 
-  .past-text {
-    position: absolute;
-    font-size: x-large;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-  }
+.past-text {
+  position: absolute;
+  font-size: x-large;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .past-text h2 {
-    font-size: 3rem;
-    padding-bottom: 20px;
-  }
+.past-text h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
 
-  .pastImage img:hover {
-  filter: opacity(0.9) drop-shadow(0 0 0 red);    
-  }
-
- 
- 
 .helloText1Abt {
   font-size: 28px;
   color: #ec5242;
@@ -238,19 +230,6 @@ a {
   line-height: 24px;
 }
 
-/* .logoImage {
-  align-items: center;
-  width: 260px;
-  height: auto;
-  padding: 32px 0 42px 0;
-} */
-.logodiv img {
-  border-radius: 10%;
-  width: 90%;
-  margin: 0 auto 40px 0;
-  position: relative;
-}
-
 .logodiv p {
   position: absolute;
   color: blue;
@@ -274,40 +253,10 @@ a {
   padding: 20px;
 }
 
-/* .pastImage2020 {
-  color: white;
-  background-image: url('img/conference1.jpg');
-  min-height: 195px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: -40px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-  text-align: center;
-  padding-top: 24px;
-} */
-
-/* .pastImage2018 {
-  color: white;
-  background-image: url('img/conference2.jpg');
-  min-height: 195px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin-top: 15px;
-  box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-  text-align: center;
-  padding-top: 24px;
-} */
-
 .pastEventImage {
   display: flex;
   flex-direction: column;
-  width: 100%;  
+  width: 100%;
 }
 
 .mainProgramCard {
@@ -458,26 +407,8 @@ a {
   padding: 20px;
 }
 
-.seemore {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-  padding: 10px 113px;
-  width: 103%;
-  color: black;
-  background: none;
-}
-
-#chevronDown {
-  color: #ec5242;
-  font-size: 25px;
-  margin-top: -18px;
-  padding-left: 8px;
-  padding-top: -85px;
+.pastImage img:hover {
+  filter: opacity(0.9) drop-shadow(0 0 0 red);
 }
 
 .container4 {
@@ -533,7 +464,7 @@ a {
     border-radius: 20px;
   }
 
-  .mobileMenu {
+  .mobile-menu-links {
     display: none;
   }
 
@@ -574,7 +505,7 @@ a {
     background-color: #787f7d4d;
   }
 
-  .topNav { 
+  .topNav {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -583,9 +514,8 @@ a {
     padding: 10px 0;
   }
 
-  .topNav li {   
+  .topNav li {
     padding-left: 20px;
-
   }
 
   .topNav > li a {
@@ -593,7 +523,7 @@ a {
   }
 
   .topNav-background {
-  background-color: #272a31;
+    background-color: #272a31;
   }
 
   .mainNavList {
@@ -611,7 +541,6 @@ a {
     padding-left: 20px;
   }
 
-  
   .mainNavList li a {
     color: #272a31;
   }
@@ -626,33 +555,11 @@ a {
     margin-left: -137px;
   }
 
-
   #hirCompaign {
     border: 3px solid #ec5242;
     color: #ec5242;
     padding: 10px;
   }
-/* 
-  .mainNavList .mainLogo {
-    justify-content: flex-start;
-  } */
-
-  /* .mainNavList .aboutList {
-    padding-left: 180px;
-  } */
-  /* .mobile-menu-links {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background-color: #d3d3d3;
-    opacity: 0.9;
-    position: fixed;
-  } */
 
   .textIntro {
     display: flex;
@@ -732,6 +639,7 @@ a {
 
   .pastEventImage {
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
     padding-top: 3%;
     margin: 0 auto;
@@ -806,7 +714,7 @@ a {
     align-self: center;
     text-align: center;
   }
-  
+
   .logodiv img {
     border-radius: 10%;
     width: 90%;
@@ -822,25 +730,16 @@ a {
     transform: translate(-50%, -50%);
   }
 
-  
-
   .pastEvents {
     display: flex;
     text-align: center;
     font-size: 100%;
-    /* padding-bottom: 20%; */
-    /* padding: 5px 140px 20px 140px; */
     flex-direction: column;
   }
 
-  
- .pastImage img {
-  width: 100%;
- }
- /* .conferenceImage1 {
-  height: fit-content;
-  width: 20px; ;
- } */
+  .pastImage img {
+    width: 100%;
+  }
 
   .container4 {
     display: none;
