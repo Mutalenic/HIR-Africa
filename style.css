@@ -135,6 +135,36 @@ a {
   padding: 106px 15px 64px 15px;
 }
 
+.pastImage img {
+  width: 80%;
+  filter: opacity(0.4) drop-shadow(0 0 0 red);
+  }
+
+  .pastImage {
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+
+  .past-text {
+    position: absolute;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+
+  .past-text h2 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .pastImage img:hover {
+  filter: opacity(0.9) drop-shadow(0 0 0 red);    
+  }
+
+ 
+ 
 .helloText1Abt {
   font-size: 28px;
   color: #ec5242;
@@ -220,7 +250,7 @@ a {
   font-size: 12px;
 }
 
-.pastImage2020 {
+/* .pastImage2020 {
   color: white;
   background-image: url('img/conference1.jpg');
   min-height: 195px;
@@ -233,9 +263,9 @@ a {
   box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
   text-align: center;
   padding-top: 24px;
-}
+} */
 
-.pastImage2018 {
+/* .pastImage2018 {
   color: white;
   background-image: url('img/conference2.jpg');
   min-height: 195px;
@@ -248,13 +278,12 @@ a {
   box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
   text-align: center;
   padding-top: 24px;
-}
+} */
 
 .pastEventImage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 54px;
+  width: 100%;  
 }
 
 .mainProgramCard {
@@ -678,10 +707,9 @@ a {
   }
 
   .pastEventImage {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 54px;
+    gap: 10px;
+    margin: 0 auto;
   }
 
   /* about desktop */
@@ -778,21 +806,13 @@ a {
     flex-direction: column;
   }
 
-  .pastImage2020 {
-    color: white;
-    background-image: url(img/conference1.jpg);
-    min-height: 195px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 15px;
-    margin-left: -37px;
-    box-shadow: inset 0 0 0 2000px rgba(255, 0, 0, 0.438);
-    text-align: center;
-    padding-top: 24px;
-  }
+ .pastImage img {
+  width: 100%;
+ }
+ /* .conferenceImage1 {
+  height: fit-content;
+  width: 20px; ;
+ } */
 
   .container4 {
     display: none;
