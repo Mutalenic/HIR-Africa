@@ -15,8 +15,7 @@ This is my first captsotne project at Microverse. Capstone Projects are done at 
 - Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 - Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
-## [Demo link]
-(https://hir-africa.vercel.app/)
+## [Demo link](https://hir-africa.vercel.app/)
 ## [Demo video](https://www.loom.com/share/323023b0908e445e87ba893d49237034)
 
 ## Authors
