@@ -233,9 +233,22 @@ a {
 .logodiv p {
   position: absolute;
   color: blue;
-  top: 119%;
+  top: 412%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Styles for medium screens */
+@media (min-width: 320px) {
+  .logodiv p {
+    top: 460%;
+  }
+}
+
+@media (min-width: 375px), (min-width: 425px) {
+  .logodiv p {
+    top: 412%;
+  }
 }
 
 .sectionDividerLine {
