@@ -4,7 +4,6 @@ const closeMenuButton = document.querySelector('.closeMenuIcon');
 
 function toggleMenu() {
   mobileMenuOverlay.style.display = 'block';
-
   closeMenuButton.style.display = 'block';
   openMenuButton.style.display = 'none';
 }
@@ -15,12 +14,12 @@ function closeMenu() {
   closeMenuButton.style.display = 'none';
 }
 
-openMenuButton.addEventListener('click', () => toggleMenu());
-closeMenuButton.addEventListener('click', () => closeMenu());
+openMenuButton.addEventListener('click', toggleMenu);
+closeMenuButton.addEventListener('click', closeMenu);
 
 const speakerCard = document.querySelector('.SpeakerSection');
 
-const speakersinfo = [
+const speakersInfo = [
   {
     Name: 'Mwiya Musokotwane',
     Picture: './img/Mwiya1.jpg',
@@ -30,7 +29,7 @@ const speakersinfo = [
   },
   {
     Name: 'Nolan Myers',
-    Picture: './img/nolan mayers.jpg',
+    Picture: './img/nolan_myers.jpg',
     ImageAlt: 'Nolan Myers',
     speakerTitle: 'CEO DOUBLE GDP',
     Bio: 'Nolan is a versatile leader with experience running customer success, professional services, operations, partnerships, and product.',
@@ -39,15 +38,15 @@ const speakersinfo = [
     Name: 'Doreen Okiri',
     Picture: './img/Doreen.jpg',
     ImageAlt: 'Doreen Okiri',
-    speakerTitle: 'Head of customer Success DOUBLE GDP',
-    Bio: 'Doreen is Specialised in Project management, software implementation and has extensive experience in SaaS customer success.',
+    speakerTitle: 'Head of Customer Success DOUBLE GDP',
+    Bio: 'Doreen specializes in project management, software implementation, and has extensive experience in SaaS customer success.',
   },
   {
     Name: 'Silumesii Maboshe',
     Picture: './img/silumesii.jpg',
     ImageAlt: 'Silumesii Maboshe',
     speakerTitle: 'Co-Founder and Director',
-    Bio: 'Silumesii is a software developer, project manager, connector, researcher and has provided solutions to various customer  tech challenges.',
+    Bio: 'Silumesii is a software developer, project manager, connector, researcher and has provided solutions to various customer tech challenges.',
   },
   {
     Name: 'Ariel Camus',
@@ -61,30 +60,29 @@ const speakersinfo = [
     Picture: './img/Butler.jpg',
     ImageAlt: 'Butler Shimaluwani',
     speakerTitle: 'Student at Microverse',
-    Bio: 'Butler is a full time student at Microverse, learning Full Stack Web Development.',
+    Bio: 'Butler is a full-time student at Microverse, learning Full Stack Web Development.',
   },
 ];
 
-function createSpeakerSection(cardData) {
-  speakerCard.innerHTML = ' ';
+function createSpeakerSection(speakers) {
+  speakerCard.innerHTML = '';
 
-  cardData.forEach((card) => {
-    const cardMaster = `
-  <div class="speaker1">
-  <div class="speakerGridCard">
-  <img src="${card.Picture}" alt="${card.ImageAlt}">
-  </div>  
-  <div class="speakerCardContent">
-  <h3 class="speakerName">${card.Name}</h3>
-  <h4 class="speakerTitle"><i>${card.speakerTitle}</i></h4>
-  <hr class="speakerTitleLine">
-  <p class="speakerText">${card.Bio}</p>
-  </div>
-  </div>
-  </div>
-  `;
-    speakerCard.insertAdjacentHTML('beforeend', cardMaster);
+  speakers.forEach((speaker) => {
+    const cardMarkup = `
+      <div class="speaker1">
+        <div class="speakerGridCard">
+          <img src="${speaker.Picture}" alt="${speaker.ImageAlt}">
+        </div>  
+        <div class="speakerCardContent">
+          <h3 class="speakerName">${speaker.Name}</h3>
+          <h4 class="speakerTitle"><i>${speaker.speakerTitle}</i></h4>
+          <hr class="speakerTitleLine">
+          <p class="speakerText">${speaker.Bio}</p>
+        </div>
+      </div>
+    `;
+    speakerCard.insertAdjacentHTML('beforeend', cardMarkup);
   });
 }
 
-createSpeakerSection(speakersinfo);
+createSpeakerSection(speakersInfo);
